@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+    
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  max-width: 300px;
+  left: 5%;
+  /* margin: auto; */
+  text-align: center;
+  font-family: arial;
+  position: fixed;
+  background-color: rgb(207, 235, 82);
+}
+
+.title {
+  color: grey;
+  font-size: 18px;
+}
+
+#pro {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 8px;
+  color: white;
+  background-color:solid rgb(0, 0, 0);
+  text-align: center solid white;
+  cursor: pointer;
+  width: 100%;
+  font-size: 18px;
+}
+
+a {
+  text-decoration: none;
+  font-size: 22px;
+  color: black;
+}
+
+button:hover, a:hover {
+  opacity: 0.7;
+}
+#search
+{  
+    text-size-adjust: 8px solid black;
+    padding: 4mm;
+    height: 4px;
+    width: 5in;
+    border-radius: 2%;
+    position: relative;
+    animation-name: smooth_scroll;
+    animation-duration: 20s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+</style><script src="mainfile.js" defer></script>
+</head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<body style="background-color: purple">
+
+<form id="form" onsubmit="return formSubmit()" style="text-align:center;">
+    <input type="text" id="search" autofocus placeholder="Search Github Username" />
+  </form>
+  <div style="text-align: center;">
+<div style="display:inline-block" class="card">
+  <img  id="user_img" src="R.png" alt="John" style="width:100%" >
+  <h1 id="user_name">GitHub Username</h1>
+  <p id="user_title" class="title">Github Bio</p>
+  <div style="margin: 80px 2;">
+    <a id="ad" href="#" class="fa fa-home">Add..</a> 
+    <a id="link" href="#" class="fa fa-id-card">link..</a>   
+  </div id="pro">
+   <a id="button" href="#" >Profile link</a> 
+</div>
+<div style="display:inline-block; width: max-content;">
+    <div style="text-align:center;"><h2 id="repo_count" style="text-align:center">Repositories</h2> </div>
+ <div class="w3-container">
+    <ul id="list_Repo" class="w3-ul w3-hoverable">
+        
+    </ul>
+ </div>
+</div>
+</div>
+
+</body>
+</html>
